@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+img {
+    max-height: 600px;
+}
+
+/*--------- body ------------- */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.titulo{
+    font-style: normal;
+    font-weight: bold;
+}
+
+body {
+    background-image: url("Imagenes/fondobody.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* -------- menú -----------------*/
+#menu a {
+    font-size: 16px;
+    color: #d63384;
+    font-weight: bold;
+}
+
+/* -------- logo -----------------*/
+.logotipo {
+    background-image: url("Imagenes/fondoencabezado.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo {
+    border-radius: 50%;
+}
+
+/*------------- PRESENTACI+ON PERSONAL---------------*/
+#quienessomos {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.productos-serv {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* -------- slider galería -----------------*/
+#gallery {
+    background-image: url("Imagenes/fondoslider");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-inner>.carousel-item>img {
+    height: 400px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(108%);
+}
+
+
+/* -------- media queries -----------------*/
+
+
+@media (max-width:768px) {
+
+    #intro,
+    #quienessomos {
+        width: 90% !important;
+    }
+
+    .pres-personal {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .productos-serv {
+        width: 100% !important;
+    }
+}
+
+@media (max-width:576px) {
+    .icono-wrap {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
